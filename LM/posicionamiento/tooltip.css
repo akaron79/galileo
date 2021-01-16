@@ -1,0 +1,50 @@
+a {
+    text-decoration: none;
+    color:cadetblue;
+}
+
+a:hover~.tooltip{
+    opacity: 1;
+}
+
+
+
+img {
+    width: 60px;
+    float: left;
+    border-radius: 10px;
+    display: block;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+.tooltip{
+    width: 30ch;
+    background-color: #000;
+    border-radius: 10px;
+    position: absolute;
+    top: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: -10px;
+    left: 2rem;
+    transform: rotate(45deg);
+}
+
+.tooltip-container {
+    display: inline-block;
+    position: relative;
+}
+
+p {
+    color: cadetblue;
+    padding: 0 1rem;
+}
