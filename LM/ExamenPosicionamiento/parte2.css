@@ -1,0 +1,47 @@
+body {
+    background-color:#34495e;
+    color: #ecf0f1;
+}
+
+table {
+    background-color: #3498db;
+    border-radius: 5px;
+    border-collapse: collapse;
+    opacity: 0;
+    display: none;
+}
+
+.usuarios {
+    position: fixed;
+    right: .5rem;
+}
+
+.caption {
+    position: absolute;
+    right: 0;
+}
+
+.usuarios:hover>.tabla {
+    opacity: .9;
+    display: block;
+}
+
+td, th {
+    padding: .25rem .5rem;
+}
+
+.multiple {
+    vertical-align: top;
+}
+
+.header-left {
+    background-color: #2980b9;
+}
+
+.header {
+    background-color: #c0392b;
+}
+
+tr {
+    color: #ecf0f1;
+}

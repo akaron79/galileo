@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.cuadro{
+    height: 50vh;
+    width: 50vw;
+    position: fixed;
+}
+
+.cuadro:hover {
+    background-color: mediumslateblue;
+    border: 5px solid lightgray;
+}
+
+.cuadro1{
+    top: 0;
+    left: 0;
+    background-color: tomato;
+}
+
+.cuadro2{
+    top: 0;
+    left: 50vw;
+    background-color: teal;
+}
+
+.cuadro3{
+    top: 50vh;
+    left: 0;
+    background-color: lightsalmon;
+}
+
+.cuadro4{
+    top: 50vh;
+    left: 50vw;
+    background-color: lightseagreen;
+}
