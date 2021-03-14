@@ -1,0 +1,110 @@
+/* Definición de variables */
+:root {
+    --bg-color-header: #1abc9c;
+    --bg-color-header-shadow: #108870;
+    --bg-color-nav: #34495e;
+    --bg-color-main: #2c3e50;
+    --bg-color-accent: #e74c3c;
+    --bg-color-thead: #7f8c8d;
+    --bg-color-par: #34495e80;
+    --text-main: #FFF;
+    --link-color: #FFF;
+    --menu-width: 15rem;
+}
+
+/* Reseteo básico de estilos */
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--text-main);
+}
+
+body, html {
+    min-width: 1300px;
+    min-height: 100vh;
+}
+
+.marco {
+    background-image: linear-gradient(to bottom right, var(--bg-color-header), var(--bg-color-header-shadow));
+    padding: 0.1px;
+    width: 100%;
+    min-width: 775px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    /* margin-top: 1em; */
+    /* margin-left: 10rem; */
+    font-size: 4.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.wrapper-imagen {
+    /* position: absolute; */
+    /* width: 800px; */
+    /* right: 0;
+    top: 3rem; */
+    display: flex;
+    align-items: center;
+}
+
+.imagen {
+    width: 600px;
+    /* margin-top: 6rem; */
+    margin-right: 6rem;
+}
+
+.form {
+    /* margin-top: 1rem; */
+    margin-left: 10rem;
+    min-width: 620px;
+}
+
+input[type="text"], .issue {
+    padding: .5rem 1rem;
+    width: 90%;
+    color:dimgrey;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+}
+
+label {
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+}
+
+.issue {
+    resize: none;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+}
+
+.tipo {
+    padding: .5rem 1rem;
+    color: dimgrey;
+    width: 90%;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+}
+
+.row {
+    margin-top: 1rem;
+}
+
+input[type="submit"], button {
+    padding: .5em 1em;
+    background-color: var(--bg-color-main);
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Open Sans';
+}
+
+/* h1 span {
+    display: block;
+} */

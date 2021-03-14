@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de soporte</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat:wght@700&family=Montserrat+Alternates&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="soporte.css">
+</head>
+<body>
+    <main>
+        <form action="soporte.php" method="POST">
+            <div class="marco">
+                <div class="form">
+                    <h1>FORMULARIO DE ATENCIÓN AL USUARIO</h1>
+                    <div class="row"><label for="tit">Asunto:</label></div>
+                    <div><input type="text" placeholder="Escribe un título que describa tu petición..." id="tit" name="tit"></div>
+                    <div class="row"><label for="tipo">Tipo:</label></div>
+                    <div>
+                        <select name="tipo" id="tipo" class="tipo">
+                            <option value="">Selecciona el tipo de petición...</option>
+                            <optgroup label="Detección de fallos">
+                                <option value="DF01">Error de programa</option>
+                                <option value="DF02">Error de traducción</option>
+                                <option value="DF01">Problemas de conexión</option>
+                            </optgroup>
+                            <optgroup label="Solicitudes de mejora">
+                                <option value="SM01">Módulo de almacenes</option>
+                                <option value="SM02">Informes</option>
+                                <option value="SM01">Experiencia de usuario</option>
+                            </optgroup>
+                            <optgroup label="Información">
+                                <option value="IN01">Manual de usuario</option>
+                                <option value="IN02">Cursos de formación</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="row"><label for="issue">Descripción de la petición:</label></div>
+                    <div><textarea rows="10" class="issue" id="issue" name="issue" placeholder="Describe el detalle de tu petición..."></textarea></div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <button type="button" onclick="window.location.href='forms_base.html'">Volver</button>
+                    </div>
+                </div>
+                <div class="wrapper-imagen">
+                    <img class="imagen" src="help.svg" alt="Soporte">
+                </div>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>

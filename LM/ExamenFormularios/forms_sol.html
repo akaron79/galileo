@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de formularios y texto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style_sol.css">
+</head>
+<body>
+  <header class="main-header">
+    <img src="logo.png" alt="Logo perro" class="logo">
+    <h1>SCA - Inventario de productos</h1>
+  </header>
+  <nav>
+    <ul class="menu">
+        <li><a href="#"><span class="material-icons-outlined">shopping_cart</span><span class="menu-text"> Solicitudes de compra</span></a></li>
+        <li><a class="selected" href="#"><span class="material-icons-outlined">inventory</span><span class="menu-text"> Inventario</span></a></li>
+        <li><a href="#"><span class="material-icons-outlined">summarize</span><span class="menu-text"> Informe de entradas</span></a></li>
+        <li><a href="#"><span class="material-icons-outlined">outbox</span><span class="menu-text"> Informe de salidas</span></a></li>
+        <li><a href="#"><span class="material-icons-outlined">engineering</span><span class="menu-text"> Mantenimiento</span></a></li>
+        <li><a href="#">Abrir ticket de soporte</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="filters">
+      <form>
+       <fieldset>
+           <legend><span class="material-icons-outlined">filter_alt</span></legend>
+            <div>
+                <label class="label" for="id">Por ID:</label>
+                <input type="text" id="id" name="id" placeholder="Introduce un ID...">
+            </div> 
+            <div>
+                <label class="label" for="field">Por texto: </label>
+                <select class="dropdown" name="field" id="field">
+                    <option value="art">Artículo</option>
+                    <option value="desc">Descripción</option>
+                    <option value="both" selected>Artículo y descripción</option>
+                </select>
+                <select class="dropdown" name="op" id="op">
+                    <option value="op1">Coincide con</option>
+                    <option value="op2">No coincide con</option>
+                    <option value="op3">Contiene a</option>
+                    <option value="op3">No contiene a</option>
+                </select>
+                <input type="text" id="text" name="text" placeholder="Introduce un texto...">
+            </div>
+            <div>
+                <label class="label" for="pvp_l">PVP entre: </label>
+                <input type="number" id="pvp_l" name="pvp_l" placeholder="Lím. inferior...">
+                <input type="number" id="pvp_h" name="pvp_h" placeholder="Lím. superior...">
+            </div>
+        </fieldset>
+        <fieldset class="disp">
+            <legend>Disponibilidad</legend>
+            <div>
+                <input type="radio" name="stock" id="stock1">
+                <label for="stock1">Todos los productos</label>
+            </div>
+            <div>
+                <input type="radio" checked name="stock" id="stock2">
+                <label for="stock2">Productos en Stock</label>
+            </div>
+            <div>
+                <input type="radio" name="stock" id="stock3">
+                <label for="stock3">Productos sin Stock</label>
+            </div>
+        </fieldset>
+        <a href="#" class="button">Aplicar</a>
+      </form>
+    </div>
+    <div class="results">
+      <table class="results-table">
+        <tr>
+          <th>ID</th>
+          <th>Artículo</th>
+          <th>Descripción</th>
+          <th>PVP</th>
+          <th>Stock</th>
+        </tr>
+        <tr>
+          <td>I997</td>
+          <td>Vendaje hidrófobo</td>
+          <td>Vendaje de 50x530cm en pack de 3</td>
+          <td>23€</td>
+          <td>15</td>
+        </tr>
+        <tr class="par">
+          <td>JB97</td>
+          <td>Agua oxigenada</td>
+          <td>Bote de agua oxigenada de 50cl</td>
+          <td>5€</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>IN78</td>
+          <td>Tijeras precisión</td>
+          <td>Tijeras con recubrimiento de titanio</td>
+          <td>51€</td>
+          <td>9</td>
+        </tr>
+        <tr class="par">
+            <td>IN78</td>
+            <td>Tijeras precisión</td>
+            <td>Tijeras con recubrimiento de titanio</td>
+            <td>51€</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>IN78</td>
+            <td>Tijeras precisión</td>
+            <td>Tijeras con recubrimiento de titanio</td>
+            <td>51€</td>
+            <td>9</td>
+        </tr>
+        <tr class="par">
+            <td>IN78</td>
+            <td>Tijeras precisión</td>
+            <td>Tijeras con recubrimiento de titanio</td>
+            <td>51€</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>IN78</td>
+            <td class="wavy">Tijeras precisión</td>
+            <td>Tijeras con recubrimiento de titanio</td>
+            <td>51€</td>
+            <td>9</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
